@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 
-export default class Item extends Component {
+export class Order extends Component {
   render() {
     return (
-      <div className="item">
+      <div className="itemOrder">
         <img src={"./img/" + this.props.item.img} />
         <h2>{this.props.item.title}</h2>
-        <p>{this.props.item.genre}</p>
         <b>{this.props.item.price}</b>
-        <bottom className='up-bottom' onClick={()=> this.props.onAdd(this.props.item)}>+</bottom>
-        
       </div>
     );
   }
 }
+
+export default Order;
